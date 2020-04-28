@@ -6,14 +6,23 @@
     <meta name="keywords" content="INTUITIVE">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <style>
+        #chartdiv {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
     <title>Home</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
 <link rel="stylesheet" href="Home.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    
-    
-    
+
+
+
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     <script type="application/ld+json">{
@@ -21,7 +30,7 @@
 		"@type": "Organization",
 		"name": "",
 		"url": "index.html",
-		"logo": "images/default-logo.png"
+		"logo": "images/logo.jpg"
 }</script>
     <meta property="og:title" content="Home">
     <meta property="og:type" content="website">
@@ -29,9 +38,9 @@
     <link rel="canonical" href="index.html">
     <meta property="og:url" content="index.html">
   </head>
-  <body data-home-page="Home.html" data-home-page-title="Home" class="u-body"><header class="u-clearfix u-header u-header" id="sec-2d9d"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+  <body data-home-page="Home.html" data-home-page-title="Home" class="u-body"><header class="u-clearfix u-header u-header" id="sec-2d9d"><div class="u-clearfix u-sheet u-sheet-1">
         <a href="#" class="u-image u-logo u-image-1">
-          <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
+          <img src="images/logo.jpg" class="u-logo-image u-logo-image-1" data-image-width="162.037">
         </a>
         <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0;">
@@ -42,22 +51,22 @@
 </defs></svg>
             </a>
           </div>
-          <div class="u-nav-container">
+          <div class="u-custom-menu u-nav-container">
             <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Home.html" style="padding: 10px 20px;">Home</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Project-Gallery.html" style="padding: 10px 20px;">Project Gallery</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Collection-Competition.html" style="padding: 10px 20px;">Collection Competition</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Admin.html" style="padding: 10px 20px;">Admin</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Learning-Center.html" style="padding: 10px 20px;">Learning Center</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Admin.html" style="padding: 10px 20px;">Admin</a>
 </li></ul>
           </div>
-          <div class="u-nav-container-collapse">
+          <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-menu-close"></div>
-              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Project-Gallery.html">Project Gallery</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Collection-Competition.html">Collection Competition</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Admin.html">Admin</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Learning-Center.html">Learning Center</a>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Project-Gallery.html" style="padding: 10px 20px;">Project Gallery</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Collection-Competition.html" style="padding: 10px 20px;">Collection Competition</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Learning-Center.html" style="padding: 10px 20px;">Learning Center</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Admin.html" style="padding: 10px 20px;">Admin</a>
 </li></ul>
             </div>
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
@@ -72,14 +81,176 @@
     <section class="u-clearfix u-section-2" id="sec-6d0e">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-align-center u-custom-font u-font-raleway u-text u-text-1">Material Available</h2>
-        <div class="u-clearfix u-custom-html u-custom-html-1">
-          <style></style>
-          <p>Sample HTML. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+        <<div id="chartdiv" class="u-clearfix u-custom-html u-custom-html-1">
+            <script>
+                am4core.ready(function() {
+                    am4core.useTheme(am4themes_animated);
+
+                    var chartMin = 0;
+                    var chartMax = 100;
+                    var data = {
+                    score: 52.7,
+                    gradingData: [
+                    {
+                      title: "Bottle Rocket",
+                      color: "#fdae19",
+                      lowScore: 0,
+                      highScore: 20
+                    },
+                    {
+                      title: "Hopscotch Tile",
+                      color: "#f3eb0c",
+                      lowScore: 20,
+                      highScore: 40
+                    },
+                    {
+                      title: "Violin",
+                      color: "#b0d136",
+                      lowScore: 40,
+                      highScore: 60
+                    },
+                    {
+                      title: "Stool",
+                      color: "#54b947",
+                      lowScore: 60,
+                      highScore: 80
+                    },
+                    {
+                      title: "Bench",
+                      color: "#0f9747",
+                      lowScore: 80,
+                      highScore: 100
+                    }
+                    ]
+                    };
+
+                    // Grading Lookup
+                    function lookUpGrade(lookupScore, grades) {
+                    // Only change code below this line
+                    for (var i = 0; i < grades.length; i++) {
+                    if (
+                      grades[i].lowScore < lookupScore &&
+                      grades[i].highScore >= lookupScore
+                    ) {
+                      return grades[i];
+                    }
+                    }
+                    return null;
+                    }
+
+                    // create chart
+                    var chart = am4core.create("chartdiv", am4charts.GaugeChart);
+                    chart.hiddenState.properties.opacity = 0;
+                    chart.fontSize = 11;
+                    chart.innerRadius = am4core.percent(80);
+                    chart.resizable = true;
+
+                    // Normal axis
+                    var axis = chart.xAxes.push(new am4charts.ValueAxis());
+                    axis.min = chartMin;
+                    axis.max = chartMax;
+                    axis.strictMinMax = true;
+                    axis.renderer.radius = am4core.percent(80);
+                    axis.renderer.inside = true;
+                    axis.renderer.line.strokeOpacity = 0.1;
+                    axis.renderer.ticks.template.disabled = false;
+                    axis.renderer.ticks.template.strokeOpacity = 1;
+                    axis.renderer.ticks.template.strokeWidth = 0.5;
+                    axis.renderer.ticks.template.length = 5;
+                    axis.renderer.grid.template.disabled = true;
+                    axis.renderer.labels.template.radius = am4core.percent(15);
+                    axis.renderer.labels.template.fontSize = "0.9em";
+
+                    // Axis for ranges
+                    var axis2 = chart.xAxes.push(new am4charts.ValueAxis());
+                    axis2.min = chartMin;
+                    axis2.max = chartMax;
+                    axis2.strictMinMax = true;
+                    axis2.renderer.labels.template.disabled = true;
+                    axis2.renderer.ticks.template.disabled = true;
+                    axis2.renderer.grid.template.disabled = false;
+                    axis2.renderer.grid.template.opacity = 0.5;
+                    axis2.renderer.labels.template.bent = true;
+                    axis2.renderer.labels.template.fill = am4core.color("#000");
+                    axis2.renderer.labels.template.fontWeight = "bold";
+                    axis2.renderer.labels.template.fillOpacity = 0.3;
+
+                    // Ranges
+                    for (let grading of data.gradingData) {
+                    var range = axis2.axisRanges.create();
+                    range.axisFill.fill = am4core.color(grading.color);
+                    range.axisFill.fillOpacity = 0.8;
+                    range.axisFill.zIndex = -1;
+                    range.value = grading.lowScore > chartMin ? grading.lowScore : chartMin;
+                    range.endValue = grading.highScore < chartMax ? grading.highScore : chartMax;
+                    range.grid.strokeOpacity = 0;
+                    range.stroke = am4core.color(grading.color).lighten(-0.1);
+                    range.label.inside = true;
+                    range.label.text = grading.title.toUpperCase();
+                    range.label.inside = true;
+                    range.label.location = 0.5;
+                    range.label.inside = true;
+                    range.label.radius = am4core.percent(10);
+                    range.label.paddingBottom = -5; // ~half font size
+                    range.label.fontSize = "0.9em";
+                    }
+
+                    var matchingGrade = lookUpGrade(data.score, data.gradingData);
+
+                    // Label 1
+                    var label = chart.radarContainer.createChild(am4core.Label);
+                    label.isMeasured = false;
+                    label.fontSize = "6em";
+                    label.x = am4core.percent(50);
+                    label.paddingBottom = 15;
+                    label.horizontalCenter = "middle";
+                    label.verticalCenter = "bottom";
+                    //label.dataItem = data;
+                    label.text = (data.score.toFixed(1) + " lbs");
+                    //label.text = "{score}";
+                    label.fill = am4core.color(matchingGrade.color);
+
+                    // Label 2
+                    var label2 = chart.radarContainer.createChild(am4core.Label);
+                    label2.isMeasured = false;
+                    label2.fontSize = "2em";
+                    label2.horizontalCenter = "middle";
+                    label2.verticalCenter = "bottom";
+                    label2.text = matchingGrade.title.toUpperCase();
+                    label2.fill = am4core.color(matchingGrade.color);
+
+
+                    // Hand
+                    var hand = chart.hands.push(new am4charts.ClockHand());
+                    hand.axis = axis2;
+                    hand.innerRadius = am4core.percent(55);
+                    hand.startWidth = 8;
+                    hand.pin.disabled = true;
+                    hand.value = data.score;
+                    hand.fill = am4core.color("#444");
+                    hand.stroke = am4core.color("#000");
+
+                    hand.events.on("positionchanged", function(){
+                    label.text = axis2.positionToValue(hand.currentPosition).toFixed(1);
+                    var value2 = axis.positionToValue(hand.currentPosition);
+                    var matchingGrade = lookUpGrade(axis.positionToValue(hand.currentPosition), data.gradingData);
+                    label2.text = matchingGrade.title.toUpperCase();
+                    label2.fill = am4core.color(matchingGrade.color);
+                    label2.stroke = am4core.color(matchingGrade.color);
+                    label.fill = am4core.color(matchingGrade.color);
+                    })
+
+                    setInterval(function() {
+                    var value = chartMin + Math.random() * (chartMax - chartMin);
+                    hand.showValue(value, 1000, am4core.ease.cubicOut);
+                    }, 2000);
+                }); // end am4core.ready()
+            </script>
         </div>
       </div>
     </section>
-    
-    
+
+
     <footer class="u-align-left u-clearfix u-custom-color-1 u-footer u-footer" id="sec-1473"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <p class="u-align-center u-text u-text-1">About</p>
       </div></footer>
@@ -92,7 +263,7 @@
       </p>
       <a class="u-link" href="https://nicepage.com" target="_blank">
         <span>Nicepage</span>
-      </a>. 
+      </a>.
     </section>
   </body>
 </html>
