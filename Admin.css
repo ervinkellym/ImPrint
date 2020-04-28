@@ -8,6 +8,7 @@
 .u-section-2 .u-form-1 {width: 570px; margin: 20px auto 0}
 .u-section-2 .u-form-group-1 {margin-left: auto; margin-right: auto}
 .u-section-2 .u-input-1 {background-image: none}
+.u-section-2 .u-btn-1 {border-style: solid}
 .u-section-2 .u-text-2 {margin: 30px auto 60px} 
 
 @media (max-width: 767px){ .u-section-2 .u-form-1 {width: 540px} }
